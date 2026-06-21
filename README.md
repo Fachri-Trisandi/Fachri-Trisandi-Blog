@@ -53,7 +53,7 @@ python manage.py createsuperuser
 Konfigurasi deploy ada di `railway.json`:
 
 ```text
-Build Command: python manage.py collectstatic --noinput
+Build Command: python -m pip install -r requirements.txt && python manage.py collectstatic --noinput
 Pre-deploy Command: python manage.py migrate
 Start Command: gunicorn blog_fahri.wsgi:application --bind 0.0.0.0:$PORT
 ```
