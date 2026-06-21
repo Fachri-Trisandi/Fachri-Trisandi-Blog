@@ -1,0 +1,65 @@
+{% extends "materi/base.html" %}
+{% load static %}
+
+{% block title %}Blog Materi Perkuliahan{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <p class="eyebrow">Blog Materi Perkuliahan</p>
+        <h1>Arsitektur Perangkat Lunak</h1>
+        <p class="hero-copy">
+            Catatan singkat untuk mengulang konsep utama, membaca ringkasan,
+            dan menemukan materi kuliah dengan cepat.
+        </p>
+        <div class="hero-actions">
+            <a class="primary-button" href="#daftar-materi">Mulai belajar</a>
+        </div>
+    </div>
+    <div class="hero-summary" aria-label="Ringkasan blog">
+        <span class="summary-number">{{ total_posts }}</span>
+        <span class="summary-label">materi tersimpan</span>
+        <span class="summary-note">Disusun untuk baca cepat sebelum kelas atau ujian.</span>
+    </div>
+</section>
+
+<div class="content-layout">
+    <section class="post-section" aria-labelledby="daftar-materi">
+        <div class="section-heading">
+            <h2 id="daftar-materi">
+                {% if query %}Hasil Pencarian{% else %}Daftar Materi{% endif %}
+            </h2>
+            <p>{{ posts|length }} materi ditemukan</p>
+        </div>
+
+        {% if query %}
+            <p class="search-note">
+                Menampilkan materi yang cocok dengan kata kunci <strong>{{ query }}</strong>.
+                <a href="{% url 'materi:index' %}">Reset</a>
+            </p>
+        {% endif %}
+
+        {% if posts %}
+            <div class="post-grid">
+                {% for post in posts %}
+                    <article class="post-card">
+                        <img class="post-image" src="{% static post.image_path %}" alt="Ilustrasi {{ post.title }}">
+                        <span class="post-number">{{ forloop.counter|stringformat:"02d" }}</span>
+                        <p class="course">{{ post.course }}</p>
+                        <h3><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h3>
+                        <p>{{ post.excerpt }}</p>
+                        <a class="read-more" href="{{ post.get_absolute_url }}">Baca materi</a>
+                    </article>
+                {% endfor %}
+            </div>
+        {% else %}
+            <div class="empty-state">
+                <h3>Materi tidak ditemukan.</h3>
+                <p>Coba gunakan kata kunci lain atau tambahkan materi baru lewat halaman admin Django.</p>
+            </div>
+        {% endif %}
+    </section>
+
+    {% include "materi/widgets.html" %}
+</div>
+{% endblock %}

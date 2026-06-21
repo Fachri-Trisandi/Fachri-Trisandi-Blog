@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Pengantar Arsitektur Perangkat Lunak</title>
+  <desc id="desc">Blueprint sederhana yang memperlihatkan client, service, database, dan keputusan arsitektur.</desc>
+  <rect width="960" height="540" fill="#fff8f2"/>
+  <circle cx="820" cy="92" r="86" fill="#bf5061" opacity=".12"/>
+  <circle cx="130" cy="430" r="110" fill="#4f7b60" opacity=".12"/>
+  <rect x="114" y="84" width="732" height="372" rx="34" fill="#fffdfc" stroke="#ead8d3" stroke-width="8"/>
+  <text x="152" y="142" fill="#76263a" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700">Software Architecture Blueprint</text>
+  <g stroke="#76263a" stroke-width="8" stroke-linecap="round" fill="none">
+    <path d="M260 270h132"/>
+    <path d="M568 270h132"/>
+    <path d="M480 210v120"/>
+    <path d="M392 270l-22-18M392 270l-22 18"/>
+    <path d="M700 270l-22-18M700 270l-22 18"/>
+  </g>
+  <g fill="#fff8f2" stroke="#ead8d3" stroke-width="6">
+    <rect x="164" y="216" width="120" height="108" rx="22"/>
+    <rect x="390" y="166" width="180" height="94" rx="22"/>
+    <rect x="390" y="292" width="180" height="94" rx="22"/>
+    <rect x="690" y="216" width="120" height="108" rx="22"/>
+  </g>
+  <g fill="#76263a" font-family="Arial, Helvetica, sans-serif" font-weight="700">
+    <text x="184" y="278" font-size="26">Client</text>
+    <text x="430" y="224" font-size="26">API</text>
+    <text x="420" y="350" font-size="26">Service</text>
+    <text x="718" y="278" font-size="26">Data</text>
+  </g>
+  <g fill="#bf5061">
+    <circle cx="224" cy="236" r="14"/>
+    <circle cx="480" cy="186" r="14"/>
+    <circle cx="480" cy="312" r="14"/>
+    <circle cx="750" cy="236" r="14"/>
+  </g>
+  <rect x="284" y="404" width="392" height="28" rx="14" fill="#e8f0e7"/>
+  <text x="336" y="425" fill="#4f7b60" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Komponen, relasi, batasan, dan keputusan desain</text>
+</svg>

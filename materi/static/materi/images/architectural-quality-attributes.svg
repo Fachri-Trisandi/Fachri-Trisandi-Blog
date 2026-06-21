@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Architectural Quality Attributes</title>
+  <desc id="desc">Radar atribut kualitas untuk security, performance, reliability, usability, scalability, dan maintainability.</desc>
+  <rect width="960" height="540" fill="#fff8f2"/>
+  <circle cx="172" cy="118" r="92" fill="#bf5061" opacity=".12"/>
+  <circle cx="798" cy="430" r="114" fill="#4f7b60" opacity=".12"/>
+  <g transform="translate(480 274)" fill="none" stroke="#ead8d3" stroke-width="5">
+    <polygon points="0,-154 134,-77 134,77 0,154 -134,77 -134,-77"/>
+    <polygon points="0,-110 95,-55 95,55 0,110 -95,55 -95,-55"/>
+    <polygon points="0,-66 57,-33 57,33 0,66 -57,33 -57,-33"/>
+    <g stroke="#d99ca3">
+      <path d="M0 0V-154M0 0L134 -77M0 0L134 77M0 0V154M0 0L-134 77M0 0L-134 -77"/>
+    </g>
+    <polygon points="0,-128 110,-64 96,56 0,120 -92,54 -116,-68" fill="#bf5061" opacity=".76" stroke="#76263a" stroke-width="6"/>
+    <circle cx="0" cy="-128" r="8" fill="#76263a" stroke="none"/>
+    <circle cx="110" cy="-64" r="8" fill="#76263a" stroke="none"/>
+    <circle cx="96" cy="56" r="8" fill="#76263a" stroke="none"/>
+    <circle cx="0" cy="120" r="8" fill="#76263a" stroke="none"/>
+    <circle cx="-92" cy="54" r="8" fill="#76263a" stroke="none"/>
+    <circle cx="-116" cy="-68" r="8" fill="#76263a" stroke="none"/>
+  </g>
+  <g fill="#76263a" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">
+    <text x="414" y="72">Security</text>
+    <text x="628" y="178">Performance</text>
+    <text x="650" y="386">Reliability</text>
+    <text x="420" y="492">Usability</text>
+    <text x="184" y="386">Scalability</text>
+    <text x="152" y="178">Maintainability</text>
+  </g>
+</svg>

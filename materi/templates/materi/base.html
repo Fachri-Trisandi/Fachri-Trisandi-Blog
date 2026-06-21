@@ -1,0 +1,31 @@
+{% load static %}
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Blog Materi Perkuliahan{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'materi/style.css' %}">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav">
+            <a class="brand" href="{% url 'materi:index' %}">
+                <span class="brand-mark">FTB</span>
+                <span>Fachri Trisandi Blog</span>
+            </a>
+            <div class="nav-actions">
+                <a class="nav-link" href="{% url 'materi:index' %}">Materi</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <p>Catatan materi kuliah yang ringkas, rapi, dan mudah dibaca.</p>
+    </footer>
+</body>
+</html>

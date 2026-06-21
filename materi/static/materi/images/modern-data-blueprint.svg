@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Modern Data Blueprint</title>
+  <desc id="desc">Pipeline data modern dari sumber data ke ingestion, lakehouse, transformasi, dan dashboard.</desc>
+  <rect width="960" height="540" fill="#fff8f2"/>
+  <circle cx="826" cy="108" r="88" fill="#bf5061" opacity=".12"/>
+  <circle cx="136" cy="430" r="116" fill="#4f7b60" opacity=".12"/>
+  <text x="124" y="90" fill="#76263a" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700">Modern Data Pipeline</text>
+  <g fill="#fffdfc" stroke="#ead8d3" stroke-width="6">
+    <rect x="84" y="178" width="128" height="150" rx="24"/>
+    <rect x="256" y="178" width="128" height="150" rx="24"/>
+    <rect x="428" y="178" width="128" height="150" rx="24"/>
+    <rect x="600" y="178" width="128" height="150" rx="24"/>
+    <rect x="772" y="178" width="106" height="150" rx="24"/>
+  </g>
+  <g stroke="#76263a" stroke-width="9" stroke-linecap="round" fill="none">
+    <path d="M214 254h38M386 254h38M558 254h38M730 254h38"/>
+    <path d="M238 232l24 22-24 22M410 232l24 22-24 22M582 232l24 22-24 22M754 232l24 22-24 22"/>
+  </g>
+  <g fill="#bf5061">
+    <circle cx="148" cy="226" r="17"/>
+    <circle cx="148" cy="280" r="17"/>
+    <rect x="294" y="216" width="52" height="76" rx="16"/>
+    <path d="M458 220h68v68c0 18-15 32-34 32s-34-14-34-32z"/>
+    <rect x="632" y="216" width="64" height="20" rx="10"/>
+    <rect x="632" y="252" width="64" height="20" rx="10"/>
+    <rect x="632" y="288" width="64" height="20" rx="10"/>
+  </g>
+  <g fill="#4f7b60">
+    <rect x="804" y="278" width="12" height="34" rx="6"/>
+    <rect x="826" y="246" width="12" height="66" rx="6"/>
+    <rect x="848" y="216" width="12" height="96" rx="6"/>
+  </g>
+  <g fill="#76263a" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">
+    <text x="112" y="380">Sources</text>
+    <text x="282" y="380">Ingest</text>
+    <text x="454" y="380">Lake</text>
+    <text x="622" y="380">Transform</text>
+    <text x="792" y="380">BI</text>
+  </g>
+</svg>

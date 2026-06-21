@@ -1,0 +1,36 @@
+{% extends "materi/base.html" %}
+{% load static %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+<div class="content-layout">
+    <div>
+        <article class="article">
+            <a class="back-link" href="{% url 'materi:index' %}">Kembali ke daftar materi</a>
+            <header class="article-header">
+                <p class="eyebrow">{{ post.course }}</p>
+                <h1>{{ post.title }}</h1>
+                <p class="article-excerpt">{{ post.excerpt }}</p>
+            </header>
+            <img class="article-image" src="{% static post.image_path %}" alt="Ilustrasi {{ post.title }}">
+            <div class="article-body">
+                {{ post.content|linebreaks }}
+            </div>
+        </article>
+
+        {% if related_posts %}
+            <section class="related" aria-labelledby="materi-lain">
+                <h2 id="materi-lain">Materi Lain</h2>
+                <div class="related-list">
+                    {% for related in related_posts %}
+                        <a href="{{ related.get_absolute_url }}">{{ related.title }}</a>
+                    {% endfor %}
+                </div>
+            </section>
+        {% endif %}
+    </div>
+
+    {% include "materi/widgets.html" %}
+</div>
+{% endblock %}

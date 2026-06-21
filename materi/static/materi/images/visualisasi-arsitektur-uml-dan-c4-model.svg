@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Visualisasi Arsitektur UML dan C4 Model</title>
+  <desc id="desc">Papan diagram berisi UML class diagram dan C4 container diagram.</desc>
+  <rect width="960" height="540" fill="#fff8f2"/>
+  <circle cx="150" cy="104" r="92" fill="#bf5061" opacity=".12"/>
+  <circle cx="816" cy="432" r="118" fill="#4f7b60" opacity=".12"/>
+  <rect x="96" y="74" width="768" height="392" rx="34" fill="#fffdfc" stroke="#ead8d3" stroke-width="8"/>
+  <text x="144" y="136" fill="#76263a" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">UML Class</text>
+  <text x="584" y="136" fill="#76263a" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">C4 Model</text>
+  <g fill="#fff8f2" stroke="#bf5061" stroke-width="5">
+    <rect x="132" y="168" width="230" height="210" rx="18"/>
+    <line x1="132" y1="222" x2="362" y2="222"/>
+    <line x1="132" y1="292" x2="362" y2="292"/>
+  </g>
+  <g fill="#76263a" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">
+    <text x="206" y="204">Post</text>
+    <text x="160" y="256">title: string</text>
+    <text x="160" y="282">slug: string</text>
+    <text x="160" y="328">getUrl()</text>
+    <text x="160" y="354">publish()</text>
+  </g>
+  <g stroke="#76263a" stroke-width="8" stroke-linecap="round" fill="none">
+    <path d="M374 270h112"/>
+    <path d="M462 246l26 24-26 24"/>
+  </g>
+  <rect x="530" y="176" width="252" height="190" rx="26" fill="#e8f0e7" stroke="#4f7b60" stroke-width="6"/>
+  <rect x="566" y="220" width="80" height="58" rx="14" fill="#bf5061"/>
+  <rect x="670" y="220" width="80" height="58" rx="14" fill="#76263a"/>
+  <rect x="616" y="304" width="92" height="42" rx="14" fill="#fffdfc" stroke="#ead8d3" stroke-width="4"/>
+  <g fill="#fffdfc" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">
+    <text x="588" y="255">Web</text>
+    <text x="692" y="255">API</text>
+  </g>
+  <text x="636" y="332" fill="#76263a" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">DB</text>
+</svg>

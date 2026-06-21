@@ -1,0 +1,35 @@
+<aside class="sidebar" aria-label="Widget blog">
+    <section class="widget search-widget">
+        <h2>Cari Materi</h2>
+        <form class="search-form" action="{% url 'materi:index' %}" method="get">
+            <label class="sr-only" for="search-materi">Cari judul atau isi materi</label>
+            <input
+                id="search-materi"
+                name="q"
+                type="search"
+                value="{{ query|default:'' }}"
+                placeholder="Cari materi..."
+            >
+            <button type="submit">Cari</button>
+        </form>
+    </section>
+
+    <section class="widget stat-widget">
+        <h2>Statistik</h2>
+        <div class="stat-row">
+            <p class="stat-number">{{ total_posts }}</p>
+            <p class="stat-label">materi tersimpan</p>
+        </div>
+    </section>
+
+    {% if recent_posts %}
+        <section class="widget">
+            <h2>Materi Terbaru</h2>
+            <div class="widget-list">
+                {% for recent in recent_posts %}
+                    <a href="{{ recent.get_absolute_url }}">{{ recent.title }}</a>
+                {% endfor %}
+            </div>
+        </section>
+    {% endif %}
+</aside>
